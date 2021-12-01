@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+/*********************** header *************************/
+
+.header {
+    background-color: orange;
+    height: 7rem;
+}
+
+.logo-holder {
+    width: 14rem;
+    height: 6rem;
+}
+
+.items-holder {
+    margin-left: 25%;
+    width: 50%;
+    display: flex;
+    list-style: none;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
