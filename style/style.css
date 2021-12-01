@@ -21,16 +21,54 @@ body {
 }
 
 .logo-holder {
+    margin-left: 10rem;
     width: 14rem;
     height: 6rem;
 }
 
 .items-holder {
-    margin-left: 25%;
-    width: 50%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
     list-style: none;
     color: white;
-    justify-content: space-around;
-    align-items: center;
+}
+
+/*********************** banner **********************/
+
+.container {
+    background-color: red;
+    width: 80%;
+}
+
+.banner img {
+    width: 50%;
+}
+
+.hero {
+    background-color: royalblue;
+    width: 50%;
+}
+
+@media (max-width:1350px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media (max-width:850px) {
+    html {
+        font-size: 25%;
+    }
+}
+
+@media (max-width:550px) {
+    html {
+        font-size: 15%;
+    }
+
+    .items-holder {
+        width: 70%;
+    }
 }
