@@ -58,6 +58,11 @@ body {
     color: #cf711f;
 }
 
+.main-nav-icon {
+    width: 2rem;
+    color: white;
+}
+
 /*********************** banner **********************/
 
 .container {
@@ -65,18 +70,112 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: blue;
-    color: white;
+    color: black;
+    width: 60%;
+    margin: 0 auto;
+    background-color: black;
+    border-bottom: 2px solid blue;
+    position: relative;
+}
+
+.carousel1 {
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    width: 3rem;
+    height: 3rem;
+}
+
+.carousel2 {
+    position: absolute;
+    top: 30%;
+    right: 2%;
+    width: 3rem;
+    height: 3rem;
 }
 
 .container-img {
-    background-color: yellow;
+    width: 100%;
 }
 
 .container-box {
-    width: 100%;
     padding: 5rem;
     background-color: rgb(233, 195, 126);
+    font-size: 2rem;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-flex-img {
+    width: 5rem;
+}
+
+.container-txt-box {
+    padding: 4rem 0rem;
+}
+
+.container-flex-2 {
+    display: flex;
+    gap: 25rem;
+}
+
+.container-flex-img-second {
+    width: 5rem;
+}
+
+/*********************** teasor **********************/
+
+.teasor {
+    background-color: rgb(233, 195, 126);
+    height: 50rem;
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    padding-top: 2rem;
+}
+
+.item1 {}
+
+.item1-headline {
+    background-color: cornsilk;
+    padding: 1rem;
+}
+
+.item1-img {
+    width: 100%;
+    height: 70%;
+}
+
+.item1-txt {
+    color: white;
+    padding: 2rem;
+}
+
+.item1-btn {
+    padding: 2rem;
+    text-decoration: none;
+}
+
+
+
+/*********************** footer **********************/
+
+.footer {
+    width: 60%;
+    background-color: orange;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 20rem;
+    margin: 0 auto;
+    color: white;
+    padding: 5rem;
+    list-style: none;
 }
 
 /*********************** Media Queries **********************/
