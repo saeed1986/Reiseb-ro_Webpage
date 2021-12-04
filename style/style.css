@@ -116,7 +116,7 @@ body {
 }
 
 .container-txt-box {
-    padding: 4rem 0rem;
+    padding: 2rem 0rem;
 }
 
 .container-flex-2 {
@@ -145,6 +145,7 @@ body {
 .item1-headline {
     background-color: cornsilk;
     padding: 1rem;
+    border: 1px solid darkblue;
 }
 
 .item1-img {
@@ -202,9 +203,15 @@ body {
 }
 
 
-@media (max-width:550px) {
+@media (max-width:600px) {
     html {
         font-size: 50%;
+    }
+
+    .header {
+        justify-content: center;
+        padding: 3rem 0rem 0rem 0rem;
+        height: 7rem;
     }
 
     .main-nav-list {
@@ -215,6 +222,15 @@ body {
         width: 100vw;
     }
 
+    .container {
+        width: 100%;
+    }
+
+    .container-box {
+        padding: 2rem;
+        width: 100vw;
+    }
+
     .carousel1,
     .carousel2 {
         display: none;
@@ -222,5 +238,31 @@ body {
 
     .teasor {
         width: 100vw;
+        padding: 0rem 0rem;
+    }
+
+    .item1 {
+        height: 50rem;
+    }
+
+    .item1-img {
+        height: 50%;
+    }
+
+    .item1-txt,
+    .item1-btn {
+        width: 90%;
+        padding: 2rem 2rem;
+    }
+
+    .container-flex,
+    .container-txt-box,
+    .container-flex-2 {
+        width: 90%;
+        padding: 1rem 1rem;
+    }
+
+    .container-flex-2 {
+        gap: 8rem;
     }
 }
