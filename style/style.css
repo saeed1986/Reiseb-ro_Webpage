@@ -10,6 +10,7 @@ html {
 
 body {
     font-family: sans-serif;
+    position: relative;
 }
 
 /***********************************/
@@ -80,16 +81,16 @@ body {
 
 .carousel1 {
     position: absolute;
-    top: 30%;
-    left: 2%;
+    top: 20vw;
+    left: 1vw;
     width: 3rem;
     height: 3rem;
 }
 
 .carousel2 {
     position: absolute;
-    top: 30%;
-    right: 2%;
+    top: 20vw;
+    right: 1vw;
     width: 3rem;
     height: 3rem;
 }
@@ -131,6 +132,7 @@ body {
 
 .teasor {
     background-color: rgb(233, 195, 126);
+    color: darkblue;
     height: 50rem;
     width: 60%;
     margin: 0 auto;
@@ -139,8 +141,6 @@ body {
     column-gap: 10px;
     padding-top: 2rem;
 }
-
-.item1 {}
 
 .item1-headline {
     background-color: cornsilk;
@@ -153,16 +153,14 @@ body {
 }
 
 .item1-txt {
-    color: white;
-    padding: 2rem;
+    color: darkblue;
+    padding: 1rem;
 }
 
 .item1-btn {
-    padding: 2rem;
+    padding: 1rem;
     text-decoration: none;
 }
-
-
 
 /*********************** footer **********************/
 
@@ -171,29 +169,58 @@ body {
     background-color: orange;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 20rem;
+    height: 15rem;
     margin: 0 auto;
     color: white;
     padding: 5rem;
-    list-style: none;
 }
 
 /*********************** Media Queries **********************/
 
-@media (max-width:1350px) {
+@media (max-width:950px) {
     html {
-        font-size: 40%;
+        font-size: 50%;
     }
 }
 
 @media (max-width:850px) {
+
     html {
-        font-size: 25%;
+        font-size: 40%;
+    }
+
+    .teasor {
+        background-color: white;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40rem 40rem 40rem;
+    }
+
+    .footer {
+        width: 100%;
+        margin-top: 70rem;
     }
 }
+
 
 @media (max-width:550px) {
     html {
         font-size: 50%;
+    }
+
+    .main-nav-list {
+        display: none;
+    }
+
+    .container-img {
+        width: 100vw;
+    }
+
+    .carousel1,
+    .carousel2 {
+        display: none;
+    }
+
+    .teasor {
+        width: 100vw;
     }
 }
