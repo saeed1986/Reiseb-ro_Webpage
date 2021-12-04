@@ -6,7 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/style.css">
-    <title>Responsive Project</title>
+    <link rel="icon" href="/assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Schoolbell&display=swap"
+        rel="stylesheet">
+    <title>Travel on Toast</title>
 </head>
 
 <body>
@@ -17,7 +27,16 @@
             <ul class="main-nav-list">
                 <li><a class="main-nav-link" href="#">Über das Blog</a></li>
                 <li><a class="main-nav-link" href="#">Reisearten</a></li>
-                <li><a class="main-nav-link" href="#">Reisetipps</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Reisetipps</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#home">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+                    </div>
+                </li>
                 <li><a class="main-nav-link" href="#">Food</a></li>
                 <li><a class="main-nav-link" href="#">Shop</a></li>
                 <li>
@@ -34,12 +53,12 @@
     <main>
         <section>
             <div class="container">
-                <div><img class="carousel1" src="/assets/2074144.png" alt="carousel icons"></div>
+                <div><img class="carousel1" src="/assets/2074145.png" alt="carousel icons"></div>
                 <img class="container-img" src="/assets/1-Langgasse-Lange-Gasse-Danzig.jpg" alt="image">
                 <div><img class="carousel2" src="/assets/2074144.png" alt="carousel icons"></div>
                 <div class="container-box">
                     <div class="container-flex">
-                        <p>Herzlich Willkommen</p>
+                        <h2 class="container-handwriting">Herzlich Willkommen</h2>
                         <img class="container-flex-img" src="/assets/bmark.png" alt="b-mark image">
                     </div>
                     <p class="container-txt-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure placeat
@@ -49,7 +68,7 @@
                         doloremque, reiciendis natus veritatis iure provident temporibus quo quos tempora porro,
                         perspiciatis alias.</p>
                     <div class="container-flex-2">
-                        <p>Liebe Grüße
+                        <p class="container-handwriting">Liebe Grüße
                             <br>
                             ANJA
                         </p>
@@ -62,56 +81,66 @@
         <section class="teasor">
             <div class="item1">
                 <h3 class="item1-headline">Artikel Title</h3>
-                <img class="item1-img" src="/assets/Archaeologischer-Park-Xanten-APX-mit-Hund-Nordtor.jpg" alt="dog">
+                <figure class="item1-img">
+                    <img src="/assets/Archaeologischer-Park-Xanten-APX-mit-Hund-Nordtor.jpg" alt="dog">
+                </figure>
                 <p class="item1-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam libero iure aliquam
-                    animi reprehenderit culpa exercitationem dicta repudiandae impedit sunt officiis nesciunt, molestias
+                    udiandae impedit sunt officiis nesciunt, molestias
                     fugit soluta maiores illo pariatur ea vero.</p>
                 <a class="item1-btn" href="#">weiterlesen</a>
             </div>
             <div class="item1">
                 <h3 class="item1-headline">Artikel Title</h3>
-                <img class="item1-img" src="/assets/Eifel-Urlaub-Rurdeifel-Rursee-520x400.jpg" alt="eifel">
+                <figure class="item1-img">
+                    <img src="/assets/Eifel-Urlaub-Rurdeifel-Rursee-520x400.jpg" alt="dog">
+                </figure>
                 <p class="item1-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam libero iure aliquam
-                    animi reprehenderit culpa exercitationem dicta repudiandae impedit sunt officiis nesciunt, molestias
+                    udiandae impedit sunt officiis nesciunt, molestias
                     fugit soluta maiores illo pariatur ea vero.</p>
                 <a class="item1-btn" href="#">weiterlesen</a>
             </div>
             <div class="item1">
                 <h3 class="item1-headline">Artikel Title</h3>
-                <img class="item1-img" src="/assets/veganes-Taboule-Rezept-Restaurant-ONA-520x400.jpg" alt="vegan">
+                <figure class="item1-img">
+                    <img src="/assets/veganes-Taboule-Rezept-Restaurant-ONA-520x400.jpg" alt="dog">
+                </figure>
                 <p class="item1-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam libero iure aliquam
-                    animi reprehenderit culpa exercitationem dicta repudiandae impedit sunt officiis nesciunt, molestias
+                    udiandae impedit sunt officiis nesciunt, molestias
                     fugit soluta maiores illo pariatur ea vero.</p>
                 <a class="item1-btn" href="#">weiterlesen</a>
             </div>
+
         </section>
     </main>
     <footer class="footer">
         <div class="item1">
-            <ul>
-                <li>hidg</li>
-                <li>dsgds</li>
-                <li>sdgd</li>
-                <li>sgdsgf</li>
-                <li>dsgsdgr</li>
-                <li>dsgsdgr</li>
+            <ul class="item1-footer">
+                <li><b>Kontakt</b>
+                </li>
+                <li>Travel on Toast - Reise Blog</li>
+                <li>Hauptstraße 0815</li>
+                <li>54321 Musterstadt</li>
+                <li>Telefon: +49 001 98765432</li>
+                <li>E-Mail: info@travelontoast.de</li>
             </ul>
         </div>
         <div class="item2">
-            <ul>
-                <li>dsgs</li>
-                <li>dsgs</li>
-                <li>dshgs</li>
-                <li>dshthfddsf</li>
-                <li>dshthfddsf</li>
+            <ul class="item1-footer">
+                <li><b>Sozial Networks</b></li>
+                <li>facebook</li>
+                <li>instagram</li>
+                <li>pinterest</li>
+                <li>youtube</li>
             </ul>
         </div>
         <div class="item3">
-            <ul>
-                <li>sdgdgdh</li>
+            <ul class="item1-footer">
+                <li><b>info@travelontoast | Impressum</b>
+                </li>
             </ul>
         </div>
     </footer>
+    <script src="/scripts/script.js"></script>
 </body>
 
 </html>
