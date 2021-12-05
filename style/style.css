@@ -40,8 +40,9 @@ body {
 .main-nav-list {
     list-style: none;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 3.2rem;
+    letter-spacing: 0.2rem;
 }
 
 .main-nav-link:link,
@@ -50,7 +51,7 @@ body {
     text-decoration: none;
     color: white;
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     transition: all 0.3s;
 }
 
@@ -183,6 +184,9 @@ body {
     color: red;
 }
 
+
+/*********************** glide.js **********************/
+
 /*********************** footer **********************/
 
 .footer {
@@ -191,14 +195,17 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     height: 18rem;
-    margin: 0 auto;
     color: white;
-    padding: 2rem 22rem;
     font-size: 2rem;
+}
+
+.item1 {
+    justify-self: center;
 }
 
 .item1-footer {
     list-style: none;
+    padding: 2rem 0rem;
 }
 
 /*********************** Media Queries **********************/
@@ -295,9 +302,10 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     background-color: #FF851B;
     color: white;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     border: none;
     cursor: pointer;
+    letter-spacing: 0.2rem;
 }
 
 .dropbtn:hover,
